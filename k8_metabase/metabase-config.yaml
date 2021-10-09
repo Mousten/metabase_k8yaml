@@ -17,9 +17,6 @@ spec:
       containers:
       - name: metabase
         image: metabase/metabase:latest
-      ports:
-      - port: 80
-        targetPort: 3000
         livenessProbe:
           httpGet:
             path: /
