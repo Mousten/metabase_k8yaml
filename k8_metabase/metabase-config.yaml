@@ -17,9 +17,6 @@ spec:
       containers:
       - name: metabase
         image: metabase/metabase:latest
-        envFrom:
-        - configMapRef:
-            name: metabase-config
         livenessProbe:
           httpGet:
             path: /
